@@ -1,16 +1,16 @@
-# # # #list are mutable 
+# #list are mutable 
 
-# # # s1=[34,56,"arman",True] #here t is must capital alphabet
-# # # # print(s1[0])
-# # # # print(s1)
+# s1=[34,56,"arman",True] #here t is must capital alphabet
+# print(s1[0])
+# print(s1)
 
-# # # # print(s1[-2])
+#  print(s1[-2])
 
 
-# # # # if 89 in s1 :
-# # # #     print("yes")
-# # # # else :
-# # # #     print("no")
+# if 89 in s1 :
+#   print("yes")
+# #  else :
+# #    print("no")
 
 # # # marks=[3,4,5,"arman","eleveen","f1"]
 # # # print(marks)
@@ -48,5 +48,5 @@
 ar=[12,45,78,45,20]
 
 
-print(ar.insert(1,1))
+print(ar.insert(2,1))
 # we can do slicing as useally use 
