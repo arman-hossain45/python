@@ -1,6 +1,6 @@
 tup=(1,2,3,4)#tuple are unchangable when we cerate a tuple it cannot be change 
 print(type(tup),tup)
-#when we give this type of cammand it show error
+#when we give this type of cammand it show error in below
 
 #tup[0]=90
 #print(tup)#show error this modification
