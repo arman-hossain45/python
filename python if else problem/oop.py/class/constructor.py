@@ -10,6 +10,5 @@ a=person()#create object when we create object it automatically call constructor
 
 
 
-
         
     

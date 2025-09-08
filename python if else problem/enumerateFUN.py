@@ -21,7 +21,6 @@ for index,mark in enumerate(marks):#here we use enumerate function
         print("arman nice")
 
 
-
 fruits=["apple","banana","mango","grapes"]
 for index,fruit in enumerate(fruits):
     print(index,fruit)# we want to see index with fruits 
