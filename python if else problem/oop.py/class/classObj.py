@@ -131,28 +131,46 @@
 #Create a class BankAccount with attributes account_number and balance. Implement methods for deposit() and withdraw().
 
 
-class BankAccount:
-    def __init__ (self,Ac_no,balance):
-        self.Ac_no=Ac_no
-        self.balance=balance
+# class BankAccount:
+#     def __init__ (self,Ac_no,balance):
+#         self.Ac_no=Ac_no
+#         self.balance=balance
 
-    def deposit(self,amount):
-        self.newbalance=self.balance + amount
-        print(f"Account balance is {self.balance}\nDeposit amount is {amount}\nNew amount is {self.newbalance}")
+#     def deposit(self,amount):
+#         self.newbalance=self.balance + amount
+#         print(f"Account balance is {self.balance}\nDeposit amount is {amount}\nNew amount is {self.newbalance}")
 
-    def withdraw(self,amount):
-        if self.newbalance>=amount:
-            self.newbalance=self.newbalance-amount
-            print(f"new balance is {self.newbalance}")
+#     def withdraw(self,amount):
+#         if self.newbalance>=amount:
+#             self.newbalance=self.newbalance-amount
+#             print(f"new balance is {self.newbalance}")
 
-        else:
-            print("Not amount of money so you cant withdraw")
+#         else:
+#             print("Not amount of money so you cant withdraw")
+
+# a=BankAccount(101,2000)
+
+# a.deposit(1000)
+# a.withdraw(100)
 
 
-a=BankAccount(101,2000)
+#Define a class Employee with name, salary, and position. Add a method to give a raise
 
-a.deposit(1000)
-a.withdraw(100)
+class employee:
+    def __init__ (self,name,salary,position):
+        self.name=name
+        self.salary=salary
+        self.position=position
+
+    def raiseSalary(self,percent):
+        self.newsalary=self.salary + self.salary*(percent/100)
+        print(f"Employee name is {self.name}\nEmployee salary is {self.salary}\nEmployee position is {self.position}\nEmployee new salary raise {percent}% is {self.newsalary}")
+
+a=employee("Arman",20000,"ML engineer")
+
+a.raiseSalary(20)
+
+
 
 
 
