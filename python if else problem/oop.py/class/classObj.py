@@ -112,23 +112,47 @@
 
 #Create a class Book that stores title, author, and price. Add a method to apply a discount.
 
-class book:
-    def __init__ (self,title,author,price):
-        self.title=title
-        self.author=author
-        self.price=price
+# class book:
+#     def __init__ (self,title,author,price):
+#         self.title=title
+#         self.author=author
+#         self.price=price
  
-    def discount(self,discount):
+#     def discount(self,discount):
         
-        discount=self.price*(discount/100)
-        self.disprice=self.price-discount
-        print (f"Title of the book :{self.title},\nAuthor of the book is {self.author}\nOrginal prize of this book {self.price}\nPrize of the book is after get {discount}taka discount {self.disprice}\n")
+#         discount=self.price*(discount/100)
+#         self.disprice=self.price-discount
+#         print (f"Title of the book :{self.title},\nAuthor of the book is {self.author}\nOrginal prize of this book {self.price}\nPrize of the book is after get {discount}taka discount {self.disprice}\n")
 
-a=book("python","arman",1000)
+# a=book("python","arman",1000)
 
-a.discount(20)
+# a.discount(20)
 
-        
+#Create a class BankAccount with attributes account_number and balance. Implement methods for deposit() and withdraw().
+
+
+class BankAccount:
+    def __init__ (self,Ac_no,balance):
+        self.Ac_no=Ac_no
+        self.balance=balance
+
+    def deposit(self,amount):
+        self.newbalance=self.balance + amount
+        print(f"Account balance is {self.balance}\nDeposit amount is {amount}\nNew amount is {self.newbalance}")
+
+    def withdraw(self,amount):
+        if self.newbalance>=amount:
+            self.newbalance=self.newbalance-amount
+            print(f"new balance is {self.newbalance}")
+
+        else:
+            print("Not amount of money so you cant withdraw")
+
+
+a=BankAccount(101,2000)
+
+a.deposit(1000)
+a.withdraw(100)
 
 
 
