@@ -1,0 +1,111 @@
+# # class person:
+# #     name="armna"#class variable 
+# #     occ="ml"
+# #     networth="100"
+
+# #     def display(self):#class method
+# #          print(f"my name is {self.name}, and my occ is {self.occ}, my net worth is {self.networth}")
+
+# a=person()#class object
+#  a.display() #call class method in this function call 
+
+# class person:
+#     def __init__ (self):
+#         print("hey my name is Arman")
+
+
+# a=person()
+
+# class f1:
+#     def __init__ (self,name,occ):
+#         self.name=name#set value by constractor 
+#         self.occ=occ
+#     def info(self):
+#         print(f"hey my name is {self.name}, and my occupation is {self.occ}")
+
+# a=f1("arman","ml engineer")
+# a.info()
+# b=f1("karina","data analysist")
+# b.info()
+# for i in range(4):
+#     b.info()
+
+#return fuc to another function 
+
+# def test(num):
+
+#     if num==0:
+#         return print
+#     else:
+#         return sum
+
+# #ret=test(1)
+# print(test(1))
+
+#one fun to another func as aargument 
+
+# def test(fun):
+#     fun("in the function")
+
+
+# test(print)
+
+#topic decorator
+
+# def test(fun):
+#     def test2():
+#         print("first line of test2")
+#         fun()
+#         print("2nd line of test2")
+
+#     return test2 
+    
+    
+# যদি return test2 না লিখতে, তাহলে test() কোনো ফাংশন রিটার্ন করতো না (মানে None রিটার্ন করতো)।
+
+# ফলে hello = test(hello) করার পর hello এর ভ্যালু হয়ে যেতো None, আর তুমি hello() কল করলে এরর পেতে।
+
+# তাই return test2 দরকার, যাতে পুরানো ফাংশনকে নতুনভাবে মোড়ানো যায়।
+#here we can also write like that 
+
+
+# @test
+# def hello():
+#     print("hello world")
+
+#hello=test(hello)
+# hello()
+
+
+#Create a class Car with attributes like brand, model, and year. Write a method to display the car’s details.
+
+# class car:
+#     def __init__ (self,brand,model,year):
+#         self.brand=brand
+#         self.model=model
+#         self.year=year
+
+#     def info(self):
+#         print(f"car detais is {self.brand},brand model is {self.model}, and year is {self.year}")
+
+# value=car("x_corolla","fb23","2014")
+# value.info()
+
+
+#Define a class Student with attributes name, roll, and marks. Write a method to check if the student has passed (marks ≥ 40)
+class student:
+    def __init__ (self,name,roll,marks):
+        self.name=name
+        self.roll=roll
+        self.marks=marks
+
+    def info(self):
+        if self.marks>40:
+            print(f"The name of the student {self.name}\n Roll is {self.roll}\n PASS")
+
+        else:
+              print(f"The name of the student {self.name}\n Roll is {self.roll}\n FAIL")
+
+
+value=student("Arman",231061008,90)
+value.info()
