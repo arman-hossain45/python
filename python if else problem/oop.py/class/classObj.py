@@ -93,19 +93,42 @@
 
 
 #Define a class Student with attributes name, roll, and marks. Write a method to check if the student has passed (marks ≥ 40)
-class student:
-    def __init__ (self,name,roll,marks):
-        self.name=name
-        self.roll=roll
-        self.marks=marks
+# class student:
+#     def __init__ (self,name,roll,marks):
+#         self.name=name
+#         self.roll=roll
+#         self.marks=marks
 
-    def info(self):
-        if self.marks>40:
-            print(f"The name of the student {self.name}\n Roll is {self.roll}\n PASS")
+#     def info(self):
+#         if self.marks>40:
+#             print(f"The name of the student {self.name}\n Roll is {self.roll}\n PASS")
 
-        else:
-              print(f"The name of the student {self.name}\n Roll is {self.roll}\n FAIL")
+#         else:
+#               print(f"The name of the student {self.name}\n Roll is {self.roll}\n FAIL")
 
 
-value=student("Arman",231061008,90)
-value.info()
+# value=student("Arman",231061008,90)
+# value.info()
+
+#Create a class Book that stores title, author, and price. Add a method to apply a discount.
+
+class book:
+    def __init__ (self,title,author,price):
+        self.title=title
+        self.author=author
+        self.price=price
+ 
+    def discount(self,discount):
+        
+        discount=self.price*(discount/100)
+        self.disprice=self.price-discount
+        print (f"Title of the book :{self.title},\nAuthor of the book is {self.author}\nOrginal prize of this book {self.price}\nPrize of the book is after get {discount}taka discount {self.disprice}\n")
+
+a=book("python","arman",1000)
+
+a.discount(20)
+
+        
+
+
+
