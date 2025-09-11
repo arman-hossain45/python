@@ -156,19 +156,42 @@
 
 #Define a class Employee with name, salary, and position. Add a method to give a raise
 
-class employee:
-    def __init__ (self,name,salary,position):
-        self.name=name
-        self.salary=salary
-        self.position=position
+# class employee:
+#     def __init__ (self,name,salary,position):
+#         self.name=name
+#         self.salary=salary
+#         self.position=position
 
-    def raiseSalary(self,percent):
-        self.newsalary=self.salary + self.salary*(percent/100)
-        print(f"Employee name is {self.name}\nEmployee salary is {self.salary}\nEmployee position is {self.position}\nEmployee new salary raise {percent}% is {self.newsalary}")
+#     def raiseSalary(self,percent):
+#         self.newsalary=self.salary + self.salary*(percent/100)
+#         print(f"Employee name is {self.name}\nEmployee salary is {self.salary}\nEmployee position is {self.position}\nEmployee new salary raise {percent}% is {self.newsalary}")
 
-a=employee("Arman",20000,"ML engineer")
+# a=employee("Arman",20000,"ML engineer")
 
-a.raiseSalary(20)
+# a.raiseSalary(20)
+
+
+#inheritance 
+
+# class parent:
+#     def __init__(self,name,id):
+#         self.name=name
+#         self.id=id
+
+#     def showdetails(self):
+#         print(f"the name of the student is {self.name}\nID of the student is {self.id}")
+
+
+# class child(parent):
+#     def section(self,sec):
+#         self.sec=sec
+#         print(f"the section is {self.sec}")
+
+
+# a=child("arman",56)
+
+# a.showdetails()#we call parent class method by child class in this child class object 
+# a.section("csit")
 
 
 
