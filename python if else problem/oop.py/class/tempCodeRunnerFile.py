@@ -1,1 +1,4 @@
-print(a.__name)
+
+# b=A("karima")
+# a.companyname="windows"
+# a.showdetails()
